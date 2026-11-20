@@ -2,6 +2,7 @@ import { useFormStatus } from "react-dom";
 
 function SubmitButton() {
   const { pending, data } = useFormStatus();
+  console.log(pending, data)
   return (
     <>
       <button disabled={pending}>{pending ? "Searching..." : "Search"}</button>
